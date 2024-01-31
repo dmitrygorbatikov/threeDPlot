@@ -2,7 +2,7 @@ import React from "react";
 import Plot from "react-plotly.js";
 import * as Plotly from "plotly.js";
 
-const My3DPlot: React.FC = () => {
+const ThreeDPlot: React.FC = () => {
   const generateData = (): Plotly.Data[] => {
     const numPoints = 100;
 
@@ -32,7 +32,7 @@ const My3DPlot: React.FC = () => {
       yaxis: { title: "Y" },
       zaxis: { title: "Z" },
     },
-    width: 1200,
+    width: 1000,
     height: 800,
   };
 
@@ -42,7 +42,7 @@ const My3DPlot: React.FC = () => {
 const App: React.FC = () => {
   return (
     <div style={{ width: "100%", height: "100%", margin: "0 auto" }}>
-      <My3DPlot />
+      <ThreeDPlot />
     </div>
   );
 };
